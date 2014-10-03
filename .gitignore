@@ -1,0 +1,16 @@
+# python compilé
+*.pyc
+
+# Build folders
+build/
+_build
+
+# g++ temporary outputs
+*.o
+
+# Qt user project file
+*.pro.user
+
+# bkp file
+*~
+
