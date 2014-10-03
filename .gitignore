@@ -13,4 +13,6 @@ _build
 
 # bkp file
 *~
+*.b#*
+*.s#*
 
