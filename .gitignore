@@ -1,4 +1,4 @@
-# python compilé
+﻿# python compilé
 *.pyc
 
 # Build folders
@@ -15,4 +15,5 @@ _build
 *~
 *.b#*
 *.s#*
+*.l#*
 
