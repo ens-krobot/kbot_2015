@@ -163,9 +163,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.3572853"
-     inkscape:cx="688.51984"
-     inkscape:cy="554.26026"
+     inkscape:zoom="0.47987282"
+     inkscape:cx="548.37787"
+     inkscape:cy="483.73856"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -3988,52 +3988,52 @@
        sodipodi:linespacing="125%"
        id="text9149"
        y="354.51123"
-       x="35.809021"
+       x="16.674967"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="354.51123"
-         x="35.809021"
+         x="16.674967"
          id="tspan9151"
-         sodipodi:role="line">USB</tspan></text>
+         sodipodi:role="line">USB_TX</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-8"
        y="339.59875"
-       x="35.809021"
+       x="15.799455"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="339.59875"
-         x="35.809021"
+         x="15.799455"
          id="tspan9151-6"
-         sodipodi:role="line">USB</tspan></text>
+         sodipodi:role="line">USB_RX</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
        id="text9149-9"
        y="455.57413"
-       x="-935.78442"
+       x="-963.95868"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="455.57413"
-         x="-935.78442"
+         x="-963.95868"
          id="tspan9151-62"
-         sodipodi:role="line">cod3_B/I2C</tspan></text>
+         sodipodi:role="line">cod3_B/SDA_HW</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
        id="text9149-3"
        y="442.73212"
-       x="-935.76404"
+       x="-962.06512"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="442.73212"
-         x="-935.76404"
+         x="-962.06512"
          id="tspan9151-4"
-         sodipodi:role="line">cod3_A/I2C</tspan></text>
+         sodipodi:role="line">cod3_A/SCL_HW</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
@@ -4052,12 +4052,12 @@
        sodipodi:linespacing="125%"
        id="text9149-5"
        y="479.43451"
-       x="-915.10291"
+       x="-915.10297"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="479.43451"
-         x="-915.10291"
+         x="-915.10297"
          id="tspan9151-1"
          sodipodi:role="line">cod2_B</tspan></text>
     <text
@@ -4166,50 +4166,50 @@
        sodipodi:linespacing="125%"
        id="text9149-4-4"
        y="478.04926"
-       x="707.27374"
+       x="701.27374"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="478.04926"
-         x="707.27374"
+         x="701.27374"
          id="tspan9151-8-3"
-         sodipodi:role="line">EXT</tspan></text>
+         sodipodi:role="line">EXT_TX</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-4-7"
        y="494.25455"
-       x="707.27374"
+       x="701.27374"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="494.25455"
-         x="707.27374"
+         x="701.27374"
          id="tspan9151-8-3-6"
-         sodipodi:role="line">EXT</tspan></text>
+         sodipodi:role="line">EXT_RX</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-2"
        y="477.7822"
-       x="42.930206"
+       x="23.679081"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="477.7822"
-         x="42.930206"
+         x="23.679081"
          id="tspan9151-8-7"
-         sodipodi:role="line">BT</tspan></text>
+         sodipodi:role="line">BT_RX</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-2-6"
        y="491.58377"
-       x="42.930206"
+       x="24.554594"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="491.58377"
-         x="42.930206"
+         x="24.554594"
          id="tspan9151-8-7-6"
-         sodipodi:role="line">BT</tspan></text>
+         sodipodi:role="line">BT_TX</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-8"
@@ -4396,89 +4396,89 @@
        sodipodi:linespacing="125%"
        id="text9149-4-45"
        y="604.37781"
-       x="41.515133"
+       x="9.4061651"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="604.37781"
-         x="41.515133"
+         x="9.4061651"
          id="tspan9151-8-0"
-         sodipodi:role="line">SPI</tspan></text>
+         sodipodi:role="line">SPI_MOSI</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-45-3"
        y="590.93225"
-       x="41.515133"
+       x="14.318208"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="590.93225"
-         x="41.515133"
+         x="14.318208"
          id="tspan9151-8-0-2"
-         sodipodi:role="line">SPI</tspan></text>
+         sodipodi:role="line">SPI_SCK</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-45-2"
        y="619.77679"
-       x="41.515133"
+       x="14.180774"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="619.77679"
-         x="41.515133"
+         x="14.180774"
          id="tspan9151-8-0-8"
-         sodipodi:role="line">SPI</tspan></text>
+         sodipodi:role="line">SPIMISO</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
        id="text9149-4-45-7"
        y="410.54959"
-       x="-893.06744"
+       x="-918.33521"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="410.54959"
-         x="-893.06744"
+         x="-918.33521"
          id="tspan9151-8-0-6"
-         sodipodi:role="line">SPI</tspan></text>
+         sodipodi:role="line">SPI_SS3</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
        id="text9149-4-45-21"
        y="383.84167"
-       x="-893.06744"
+       x="-918.12653"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="383.84167"
-         x="-893.06744"
+         x="-918.12653"
          id="tspan9151-8-0-26"
-         sodipodi:role="line">SPI</tspan></text>
+         sodipodi:role="line">SPI_SS2</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
        id="text9149-4-45-4"
        y="359.80453"
-       x="-893.06744"
+       x="-918.20795"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="359.80453"
-         x="-893.06744"
+         x="-918.20795"
          id="tspan9151-8-0-1"
-         sodipodi:role="line">SPI</tspan></text>
+         sodipodi:role="line">SPI_SS1</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-45-38"
        y="577.04413"
-       x="41.515133"
+       x="16.104866"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="577.04413"
-         x="41.515133"
+         x="16.104866"
          id="tspan9151-8-0-7"
-         sodipodi:role="line">SPI</tspan></text>
+         sodipodi:role="line">SPI_SS0</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
@@ -4491,20 +4491,20 @@
          y="370.0705"
          x="-134.15056"
          id="tspan9151-8-3-3-4"
-         sodipodi:role="line">EXT</tspan></text>
+         sodipodi:role="line">EXT_S1</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
        id="text9149-4-4-8-4"
-       y="386.62943"
+       y="384.62943"
        x="-134.15056"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
-         y="386.62943"
+         y="384.62943"
          x="-134.15056"
          id="tspan9151-8-3-3-9"
-         sodipodi:role="line">EXT</tspan></text>
+         sodipodi:role="line">EXT_S2</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
@@ -4517,7 +4517,7 @@
          y="357.78485"
          x="-134.15056"
          id="tspan9151-8-3-3-8"
-         sodipodi:role="line">EXT</tspan></text>
+         sodipodi:role="line">EXT_DET</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-41"
@@ -4529,7 +4529,7 @@
          y="549.1991"
          x="684.43268"
          id="tspan9151-8-02"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_9</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-28"
@@ -4541,7 +4541,7 @@
          y="573.77045"
          x="684.43268"
          id="tspan9151-8-47"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_8</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-6"
@@ -4553,7 +4553,7 @@
          y="602.61505"
          x="684.43268"
          id="tspan9151-8-9"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_7</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-5"
@@ -4565,7 +4565,7 @@
          y="633.06207"
          x="684.43268"
          id="tspan9151-8-6"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_6</tspan></text>
     <text
        inkscape:transform-center-y="-4.4589846"
        inkscape:transform-center-x="5.0537113"
@@ -4579,7 +4579,7 @@
          y="658.16754"
          x="684.43268"
          id="tspan9151-8-65"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_4</tspan></text>
     <text
        inkscape:transform-center-y="7.993381"
        inkscape:transform-center-x="-5.0537113"
@@ -4593,7 +4593,7 @@
          y="378.80243"
          x="684.43268"
          id="tspan9151-8-03"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_10</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-95"
@@ -4605,7 +4605,7 @@
          y="394.82721"
          x="684.43268"
          id="tspan9151-8-68"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_5</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-3"
@@ -4617,7 +4617,7 @@
          y="352.09451"
          x="684.43268"
          id="tspan9151-8-028"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_11</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-21"
@@ -4629,7 +4629,7 @@
          y="325.92072"
          x="684.43268"
          id="tspan9151-8-2"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_12</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
@@ -4642,70 +4642,70 @@
          y="515.71021"
          x="-134.03348"
          id="tspan9151-8-5"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_13</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
        id="text9149-4-30-0"
        y="344.77936"
-       x="-887.79401"
+       x="-899.96979"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="344.77936"
-         x="-887.79401"
+         x="-899.96979"
          id="tspan9151-8-5-0"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_0</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
        id="text9149-4-30-6"
        y="370.95316"
-       x="-887.79401"
+       x="-899.70001"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="370.95316"
-         x="-887.79401"
+         x="-899.70001"
          id="tspan9151-8-5-1"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_1</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
        id="text9149-4-30-02"
        y="420.09576"
-       x="-887.79401"
+       x="-899.82727"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="420.09576"
-         x="-887.79401"
+         x="-899.82727"
          id="tspan9151-8-5-04"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_3</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
        id="text9149-4-30-07"
        y="394.99026"
-       x="-887.79401"
+       x="-899.61859"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="394.99026"
-         x="-887.79401"
+         x="-899.61859"
          id="tspan9151-8-5-5"
-         sodipodi:role="line">UI</tspan></text>
+         sodipodi:role="line">UI_2</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
        id="text9149-4-45-4-1"
        y="284.53418"
-       x="-904.27606"
+       x="-904.27612"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
          y="284.53418"
-         x="-904.27606"
+         x="-904.27612"
          id="tspan9151-8-0-1-0"
          sodipodi:role="line">reset</tspan></text>
     <text
@@ -5257,12 +5257,12 @@
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
        id="text9149-4-48-53-5"
-       y="397.63831"
+       y="395.63831"
        x="-134.15056"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
-         y="397.63831"
+         y="395.63831"
          x="-134.15056"
          id="tspan9151-8-4-26-0"
          sodipodi:role="line">BAT_0</tspan></text>
@@ -5270,12 +5270,12 @@
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
        id="text9149-4-48-53-5-1"
-       y="408.59818"
+       y="404.59818"
        x="-134.15056"
        style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"><tspan
          style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
-         y="408.59818"
+         y="404.59818"
          x="-134.15056"
          id="tspan9151-8-4-26-0-7"
          sodipodi:role="line">BAT_1</tspan></text>
@@ -5330,7 +5330,7 @@
          y="441.01431"
          x="-134.15056"
          id="tspan9151-8-4-26-0-5-0"
-         sodipodi:role="line">I2C_1</tspan></text>
+         sodipodi:role="line">SCL_SW1</tspan></text>
     <text
        transform="matrix(0,-1,1,0,0,0)"
        sodipodi:linespacing="125%"
@@ -5343,7 +5343,7 @@
          y="454.27606"
          x="-134.15056"
          id="tspan9151-8-4-26-0-5-0-0"
-         sodipodi:role="line">I2C_1</tspan></text>
+         sodipodi:role="line">SDA_SW1</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-48-53-5-6-8-9"
@@ -5355,7 +5355,7 @@
          y="589.36609"
          x="684.31561"
          id="tspan9151-8-4-26-0-5-0-3"
-         sodipodi:role="line">I2C_2</tspan></text>
+         sodipodi:role="line">SCL_SW2</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text9149-4-48-53-5-6-8-9-2"
@@ -5367,6 +5367,6 @@
          y="615.88965"
          x="684.31561"
          id="tspan9151-8-4-26-0-5-0-3-7"
-         sodipodi:role="line">I2C_2</tspan></text>
+         sodipodi:role="line">SDA_SW2</tspan></text>
   </g>
 </svg>
