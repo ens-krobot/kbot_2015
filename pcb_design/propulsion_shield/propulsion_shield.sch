@@ -9281,7 +9281,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="GND32" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
 <part name="GND33" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="470"/>
+<part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="10k"/>
 <part name="SUPPLY28" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="JP28" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 <part name="SUPPLY29" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -10933,7 +10933,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <approved hash="104,1,40.64,167.64,IC1,+5V,VCC,,,"/>
 <approved hash="104,1,45.72,167.64,IC1,+5V,VCC,,,"/>
 <approved hash="113,1,48.26,101.6,IC1,,,,,"/>
-<approved hash="113,1,102.393,42.1047,POWER_DIST,,,,,"/>
+<approved hash="113,1,102.477,42.1047,POWER_DIST,,,,,"/>
 <approved hash="113,1,215.223,162.755,JP2,,,,,"/>
 <approved hash="113,1,215.223,134.815,JP3,,,,,"/>
 <approved hash="113,1,215.223,104.335,JP4,,,,,"/>
