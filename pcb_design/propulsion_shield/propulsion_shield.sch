@@ -10114,11 +10114,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </net>
 <net name="SDA_SW1" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PK6(ADC14/PCINT22)"/>
-<wire x1="15.24" y1="109.22" x2="2.54" y2="109.22" width="0.2032" layer="91"/>
-<label x="2.54" y="109.22" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP22" gate="G$1" pin="1"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="190.5" y1="66.04" x2="203.2" y2="66.04" width="0.1524" layer="91"/>
@@ -10127,13 +10122,13 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <junction x="203.2" y="66.04"/>
 <label x="205.74" y="66.04" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="SCL_SW1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PK7(ADC15/PCINT23)"/>
 <wire x1="15.24" y1="106.68" x2="2.54" y2="106.68" width="0.2032" layer="91"/>
 <label x="2.54" y="106.68" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="SCL_SW1" class="0">
 <segment>
 <pinref part="JP22" gate="G$1" pin="2"/>
 <pinref part="R9" gate="G$1" pin="2"/>
@@ -10142,6 +10137,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="195.58" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
 <junction x="195.58" y="68.58"/>
 <label x="205.74" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PK6(ADC14/PCINT22)"/>
+<wire x1="15.24" y1="109.22" x2="2.54" y2="109.22" width="0.2032" layer="91"/>
+<label x="2.54" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EXT_RX" class="0">
