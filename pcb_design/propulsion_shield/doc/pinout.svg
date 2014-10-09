@@ -163,15 +163,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.47987282"
-     inkscape:cx="548.37787"
-     inkscape:cy="483.73856"
+     inkscape:zoom="2.7145706"
+     inkscape:cx="534.29697"
+     inkscape:cy="826.7974"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="746"
-     inkscape:window-x="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1023"
+     inkscape:window-x="1680"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      showguides="true"
@@ -5368,5 +5368,18 @@
          x="684.31561"
          id="tspan9151-8-4-26-0-5-0-3-7"
          sodipodi:role="line">SDA_SW2</tspan></text>
+    <text
+       transform="matrix(0,-1,1,0,0,0)"
+       sodipodi:linespacing="125%"
+       id="text9149-4-48-53-5-6-0"
+       y="428.12091"
+       x="-134.15056"
+       style="font-size:34.74908066px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-size:10.42472458px;fill:#0000ff;fill-opacity:1"
+         y="428.12091"
+         x="-134.15056"
+         id="tspan9151-8-4-26-0-5-8"
+         sodipodi:role="line">BUZZER</tspan></text>
   </g>
 </svg>
