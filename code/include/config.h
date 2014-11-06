@@ -1,14 +1,14 @@
-/*
- config.h
- 
- Rev1 - October 27th, 2014
- 
- Configuration file for Propulsion Shield
- Author : Germain Haessig <ghaessig@crans.org>
- License : BSD3
- This file is part of Kbots
- */
+/************************************************************************
+ * File : config.h                                                      *
+ *  Configuration file for Kbots main shield.                           *
+ *                                                                      *
+ * Copyright : (c) 2014, Germain Haessig <ghaessig@crans.org>           *
+ * Copyright : (c) 2014, Xavier Lagorce <Xavier.Lagorce@crans.org>      *
+ ************************************************************************/
 
+// Only include this file once
+#ifndef __CONFIG_H
+#define __CONFIG_H
 
 /* ---------------- 
   MOTORS pinout
@@ -91,30 +91,31 @@
 -------------------------------- */
 #define UI_LED_CPA 23 //Charlieplexing A
 #define UI_LED_CPB 25 //Charlieplexing B
-#define UI_LEB_CPC 27 //Charlieplexing C
+#define UI_LED_CPC 27 //Charlieplexing C
 #define UI_LED5 29
-#define UI_LED6 31
-#define UI_LED7 33
-#define UI_LED8 35
-#define UI_LED9 37
-#define UI_LED10 39
-#define UI_BTN_BOTTOM 41
+#define UI_LED4 31
+#define UI_LED3 33
+#define UI_LED2 35
+#define UI_LED1 37
+#define UI_LED0 39
+#define UI_BTN_DOWN 41
 #define UI_BTN_LEFT 43
 #define UI_BTN_CENTER 45
 #define UI_BTN_RIGHT 47
-#define UI_BTN_TOP 49
+#define UI_BTN_UP 49
 
 
 /* -------- 
   OTHERS
 -------- */
+#define LED_IND 13
 #define EXT_DET A7
 #define EXT_S1 A8
 #define EXT_S2 A9
 #define START_BTN A0
 #define BUZZER A13
 
-
+#endif
 
 
 
