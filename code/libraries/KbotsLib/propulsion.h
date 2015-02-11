@@ -13,14 +13,10 @@
 #include <scheduler.h>
 #include "odometry.h"
 
-#define DEFAULT_MAX_MOTOR_CMD 255
-#define DEFAULT_MAX_INTEGRATOR 255.
-#define DEFAULT_DEAD_ZONE 0
-
 // Forward declaration of "higher" classes for friend declaration
 class SpeedProfiler;
 
-class DifferentialDrive : public ScheduledTask {
+class Propulsion : public ScheduledTask {
  public:
   // For internal use by the library
   friend class SpeedProfiler;
@@ -28,7 +24,8 @@ class DifferentialDrive : public ScheduledTask {
   // Enumeration for motor description
   enum motors {
     left_motor = 0,
-    right_motor = 1
+    right_motor = 1,
+    front_motor = 2
   };
   enum motor_mode {
     enable,
@@ -38,17 +35,17 @@ class DifferentialDrive : public ScheduledTask {
   };
 
   // Constructor:
-  //  Builds a new DifferentialDrive object
+  //  Builds a new Propulsion object
   // Parameters:
   //  - period: period of the control loop update in microseconds
-  DifferentialDrive(unsigned long period);
+  Propulsion(unsigned long period);
 
   // void begin(uint8_t left_in1, uint8_t left_in2, uint8_t left_en,
   //            uint8_t right_in1, uint8_t right_in2, uint8_t right_en,
   //            float Kp, float Ki,
   //            Odometry *odometer,
   //            float shaft_width, float left_wheel_radius, float right_wheel_radius):
-  //  Initialize the object
+  //  Initialize the object for differential drives.
   // Parameters:
   //  - left_in1, right_in1: pin number of the first H-bridge input for both motors
   //  - left_in2, right_in2: pin number of the second H-bridge input for both motors
@@ -65,12 +62,46 @@ class DifferentialDrive : public ScheduledTask {
              Odometry *odometer,
              float shaft_width, float left_wheel_radius, float right_wheel_radius);
 
+  // void begin(uint8_t left_in1, uint8_t left_in2, uint8_t left_en,
+  //            uint8_t right_in1, uint8_t right_in2, uint8_t right_en,
+  //            uint8_t front_in1, uint8_t front_in2, uint8_t, front_en,
+  //            float Kp, float Ki,
+  //            Odometry *odometer,
+  //            float robot_radius,
+  //            float left_wheel_radius, float right_wheel_radius, float front_wheel_radius):
+  //  Initialize the object for omnidirectional drives.
+  // Parameters:
+  //  - left_in1, right_in1, front_in1: pin number of the first H-bridge input for motors
+  //  - left_in2, right_in2, front_in2: pin number of the second H-bridge input for motors
+  //  - left_en, right_en, front_en: pin number of the H-bridge's enable for motors
+  //  - Kp: proportionnal gain of the wheel position's PI controller
+  //  - Ki: integral gain of the wheel position's PI controller
+  //  - odometer: pointer to the odometry object following the robot movements
+  //  - robot_radius, left_wheel_radius, right_wheel_radius, front_wheel_radius:
+  //            physical parameters of the differential drive
+  //  - period: period of the control loop update in microseconds
+  void begin(uint8_t left_in1, uint8_t left_in2, uint8_t left_en,
+             uint8_t right_in1, uint8_t right_in2, uint8_t right_en,
+             uint8_t front_in1, uint8_t front_in2, uint8_t front_en,
+             float Kp, float Ki,
+             Odometry *odometer,
+             float robot_radius,
+             float left_wheel_radius, float right_wheel_radius, float front_wheel_radius);
+
   // void set_speeds(float linear_speed, float rotational_speed):
-  //  Set the reference speeds for the control loop
+  //  Set the reference speeds for the control loop in differential drive mode
   // Parameters:
   //  - linear_speed: linear speed of the robot in m/s
   //  - rotational_speed: rotational speed of the robot in rad/s
   void set_speeds(float linear_speed, float rotational_speed);
+
+  // void set_speeds(float linear_speed_X, float linear_speed_Y, float rotational_speed):
+  //  Set the reference speeds for the control loop in omnidirectional drive mode
+  // Parameters:
+  //  - linear_speed_X: linear speed of the robot along the X axis in m/s
+  //  - linear_speed_Y: linear speed of the robot along the Y axis in m/s
+  //  - rotational_speed: rotational speed of the robot in rad/s
+  void set_speeds(float linear_speed_X, float linear_speed_Y, float rotational_speed);
 
   // void set_motor_mode(motor_mode mode):
   //  Set the working mode of the motor (enabled, free rolling, breaking)
@@ -87,14 +118,16 @@ class DifferentialDrive : public ScheduledTask {
   // void invert_motors_command(boolean left, boolean right):
   //  Invert or not the command applied to each motor.
   // Parameters:
-  //  - left, right: if true the corresponding motor command will be inverted
+  //  - left, right, front: if true the corresponding motor command will be inverted
   //                 (defaults to false in the constructor)
   void invert_motor_commands(boolean left, boolean right);
+  void invert_motor_commands(boolean left, boolean right, boolean front);
 
   // void set_dead_zones(int left, int right):
   //  Set the dead zones for each motors. This value will be added to the command
   // sent to the motors when driving them.
   void set_dead_zones(int left, int right);
+  void set_dead_zones(int left, int right, int front);
 
   // void set_max_integrator(float max_integrator):
   //  Set the maximum value of the integral contribution of the PI controller
@@ -116,15 +149,21 @@ class DifferentialDrive : public ScheduledTask {
   //         [-max_motor_cmd; max_motor_cmd]
   void set_motor_cmd(motors motor_id, int vel);
  protected:
+  enum PropulsionType {
+    differential,
+    omnidirectional
+  };
 
-  uint8_t pin_in1_[2], pin_in2_[2], pin_en_[2];
-  float pos_ref_[2], corr_int_[2], lin_speed_ref_, rot_speed_ref_;
-  float shaft_, left_radius_, right_radius_;
-  char last_dir_[2];
-  int max_cmd_[2], inv_cmd_[2], dead_zones_[2];
+  uint8_t pin_in1_[3], pin_in2_[3], pin_en_[3];
+  float pos_ref_[3], corr_int_[3];
+  float lin_speed_X_ref_, lin_speed_Y_ref_, lin_speed_ref_, rot_speed_ref_;
+  float shaft_, left_radius_, right_radius_, front_radius_;
+  char last_dir_[3];
+  int max_cmd_[3], inv_cmd_[3], dead_zones_[3];
   float max_int_, Kp_, Ki_;
   Odometry *odometer_;
   unsigned long last_control_;
+  PropulsionType type_;
 };
 
 #endif

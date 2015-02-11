@@ -12,7 +12,7 @@ SpeedProfiler::SpeedProfiler(unsigned long period) :
             ScheduledTask(period, 0) {
 }
 
-void SpeedProfiler::begin(Odometry *odometer, DifferentialDrive *ddrive,
+void SpeedProfiler::begin(Odometry *odometer, Propulsion *ddrive,
                           float Kp_theta) {
   odometer_ = odometer;
   ddrive_ = ddrive;

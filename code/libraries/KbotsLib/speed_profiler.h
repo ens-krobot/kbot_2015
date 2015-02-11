@@ -33,16 +33,16 @@ class SpeedProfiler : public ScheduledTask {
   //  - period: period of the control loop update in microseconds
   SpeedProfiler(unsigned long period);
 
-  // void begin(Odometry *odometer, DifferentialDrive *ddrive,
+  // void begin(Odometry *odometer, Propulsion *ddrive,
   //            float Kp_theta):
   //  Initialier the object.
   // Parameters:
-  //  - ddrive: pointer to the DifferentialDrive object controlling the motors
+  //  - ddrive: pointer to the Propulsion object controlling the motors
   //  - odometer: pointer to the Odometry object estimating the robot's position
   //  - Kp_theta: Gain of the proportional controller used to drive in straigth
   //              lines (defaults to DEFAULT_KP_THETA which is tuned for standard
   //              operations)
-  void begin(Odometry *odometer, DifferentialDrive *ddrive,
+  void begin(Odometry *odometer, Propulsion *ddrive,
              float Kp_theta = DEFAULT_KP_THETA);
 
   // char is_following_profile():
@@ -137,7 +137,7 @@ class SpeedProfiler : public ScheduledTask {
   char is_following_, profile_sign_;
   unsigned long start_time_, duration_;
   Odometry *odometer_;
-  DifferentialDrive *ddrive_;
+  Propulsion *ddrive_;
 };
 
 #endif
