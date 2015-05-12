@@ -1,0 +1,2 @@
+[paths]
+default = ssh://hg@bitbucket.org/lagorce/liquidcrystal_softi2c
