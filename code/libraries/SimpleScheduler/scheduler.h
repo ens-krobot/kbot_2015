@@ -94,15 +94,25 @@ class Scheduler {
   //  Index of the chrono assigned, -1 if no chrono is available
   static char start_chrono(unsigned long duration);
 
-  // char has_chrono_elapsed(char chrono_idx)
+  // bool has_chrono_elapsed(char chrono_idx)
   //  This method checks if a chrono has elapsed
   // Parameters:
   //  - chrono_idx: index of the chrono to check.
   // Return value:
-  //  non-zero if the chrono has elapsed, zero otherwise.
-  static char has_chrono_elapsed(char chrono_idx);
+  //  'true' if the chrono has elapsed, 'false' otherwise.
+  static bool has_chrono_elapsed(char chrono_idx);
 
-  // char cleanup_chronos()
+  // char reset_chrono(char chrono_idx)
+  //  This methods resets a given chrono
+  // Parameters:
+  //  - chrono_idx: index of the chrono to check
+  // Return value:
+  //  zero if the reset was 'needed'
+  static char reset_chrono(char chrono_idx);
+
+  // void cleanup_chronos():
+  //  Clean up all chronos
+  static void cleanup_chronos();
 
  protected:
   static ScheduledTask *queued_tasks_[SCHEDULER_MAX_TASKS];

@@ -43,6 +43,7 @@ void Scheduler::begin() {
     queued_tasks_[i] = NULL;
   }
   num_tasks_ = 0;
+  cleanup_chronos();
 }
 
 void Scheduler::update() {
@@ -77,10 +78,29 @@ char Scheduler::start_chrono(unsigned long duration) {
   return -1;
 }
 
-char Scheduler::has_chrono_elapsed(char chrono_idx) {
+bool Scheduler::has_chrono_elapsed(char chrono_idx) {
   if (chrono_idx >= 0 && chrono_idx < MAX_CHRONOS) {
     return (micros() >= timer_ends_[chrono_idx]);
   } else {
     return true;
+  }
+}
+
+char Scheduler::reset_chrono(char chrono_idx) {
+  if (chrono_idx >= 0 && chrono_idx < MAX_CHRONOS) {
+    if (is_timer_active_[chrono_idx]) {
+      is_timer_active_[chrono_idx] = 0;
+      return 0;
+    } else {
+      return -1;
+    }
+  } else {
+    return -2;
+  }
+}
+
+void Scheduler::cleanup_chronos() {
+  for (unsigned int idx=0; idx < MAX_CHRONOS; idx++) {
+    is_timer_active_[idx] = 0;
   }
 }
