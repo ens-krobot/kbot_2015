@@ -100,6 +100,49 @@ char SpeedProfiler::start_rotation_profile(float alpha, float omega_max, float a
   return 0;
 }
 
+void SpeedProfiler::controlled_stop(float a_lin, float a_rot) {
+  unsigned long cur_time = micros();
+  float cur_speed, acc;
+
+  if (is_following_ != none) {
+    // Compute current speed
+    float profile1 = amax_ * (cur_time - start_time_) * 1e-6;
+    float profile2 = amax_ * (duration_ - cur_time + start_time_) * 1e-6;
+    if (profile_sign_ > 0) {
+      cur_speed = min(vmax_, min(profile1, profile2));
+    } else {
+      cur_speed = max(vmax_, max(profile1, profile2));
+    }
+
+    // Compute stopping time
+    unsigned long stop_time;
+    switch(is_following_) {
+    case linear:
+    case linear_theta:
+      acc = a_lin;
+      break;
+    case rotation:
+      acc = a_rot;
+    default:
+      // Not possible or not implemented
+      return;
+      break;
+    }
+    stop_time = fabs(cur_speed / acc);
+    // Create false degenerate profile that we follow from the middle point
+    if (stop_time > cur_time) {
+      start_time_ = cur_time - stop_time;
+      duration_ = 2*stop_time;
+    } else {
+      start_time_ = 0;
+      duration_ = cur_time+stop_time;
+    }
+    vmax_ = cur_speed;
+    amax_ = vmax_ >= 0. ? acc : -acc;
+    profile_sign_ = vmax_ >= 0. ? 1 : -1;
+  }
+}
+
 void SpeedProfiler::stop_motion() {
   is_following_ = none;
   ddrive_->set_speeds(0., 0.);

@@ -124,6 +124,13 @@ class SpeedProfiler : public ScheduledTask {
   //  Zero if no error is encountered.
   char start_rotation_profile(float alha, float omega_max, float amax);
 
+  // void SpeedProfiler::controlled_stop(float a_lin, float a_rot):
+  //  Stops the robot with a given acceleration
+  // Parameters:
+  //  - a_lin: acceleration to use if we are in a linear profile
+  //  - a_rot: acceleration to use if we are in a rotational profile
+  void controlled_stop(float a_lin, float a_rot);
+
   // void stop_motion():
   //  Stop the robot "instantly", i.e. without slowing down profile.
   void stop_motion();
